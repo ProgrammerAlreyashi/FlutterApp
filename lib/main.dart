@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/widgets/bottom_bar.dart';
+import 'package:flutter_app/widgets/app_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,7 +38,7 @@ class MyHomePage extends StatefulWidget implements PreferredSizeWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(100),
         child: AppBarWidget(title: "First Page", icon: Icons.home),
