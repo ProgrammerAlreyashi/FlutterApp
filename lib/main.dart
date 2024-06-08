@@ -46,7 +46,12 @@ class _MyHomePageState extends State<MyHomePage> {
       body: const Center(
         child: Text('Hello, World!'),
       ),
-      bottomNavigationBar: const BottomBar(),
+      bottomNavigationBar: BottomBar(
+        leftPress: (index) {
+          print(index);
+        },
+        index: 0,
+      ),
     );
   }
 }
