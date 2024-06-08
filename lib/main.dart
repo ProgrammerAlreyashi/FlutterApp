@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widgets/bottom_bar.dart';
 import 'package:flutter_app/widgets/app_bar.dart';
 
 void main() {
@@ -33,6 +34,7 @@ class MyHomePage extends StatefulWidget implements PreferredSizeWidget {
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
 
+
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
@@ -41,6 +43,10 @@ class _MyHomePageState extends State<MyHomePage> {
         preferredSize: Size.fromHeight(100),
         child: AppBarWidget(title: "First Page", icon: Icons.home),
       ),
+      body: const Center(
+        child: Text('Hello, World!'),
+      ),
+      bottomNavigationBar: const BottomBar(),
     );
   }
 }
