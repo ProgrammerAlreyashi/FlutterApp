@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widgets/bottom_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,6 +33,14 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Flutter Demo'),
+      ),
+      body: const Center(
+        child: Text('Hello, World!'),
+      ),
+      bottomNavigationBar: const BottomBar(),
+    );
   }
 }
